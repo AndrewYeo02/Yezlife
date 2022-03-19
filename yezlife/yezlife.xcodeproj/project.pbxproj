@@ -38,6 +38,7 @@
 		61F1738E27E332730059EB59 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1738D27E332730059EB59 /* LoginViewController.swift */; };
 		61F1739027E332940059EB59 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1738F27E332940059EB59 /* SignUpViewController.swift */; };
 		61F1739227E3401A0059EB59 /* loginTothePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1739127E3401A0059EB59 /* loginTothePage.swift */; };
+		61F1739427E620970059EB59 /* BacktoMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1739327E620970059EB59 /* BacktoMain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		61F1738D27E332730059EB59 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		61F1738F27E332940059EB59 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		61F1739127E3401A0059EB59 /* loginTothePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginTothePage.swift; sourceTree = "<group>"; };
+		61F1739327E620970059EB59 /* BacktoMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktoMain.swift; sourceTree = "<group>"; };
 		C197690EEFAEE4ECEA8CAB79 /* Pods_yezlife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yezlife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7BA10B1154CF48346C6C0C /* Pods-yezlife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yezlife.debug.xcconfig"; path = "Target Support Files/Pods-yezlife/Pods-yezlife.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +137,7 @@
 		615CFBD6273D313500561FEC = {
 			isa = PBXGroup;
 			children = (
+				61F1739327E620970059EB59 /* BacktoMain.swift */,
 				615CFBE1273D313500561FEC /* yezlife */,
 				615CFBF8273D313700561FEC /* yezlifeTests */,
 				615CFC02273D313700561FEC /* yezlifeUITests */,
@@ -389,6 +392,7 @@
 			files = (
 				61F1738E27E332730059EB59 /* LoginViewController.swift in Sources */,
 				61F1739227E3401A0059EB59 /* loginTothePage.swift in Sources */,
+				61F1739427E620970059EB59 /* BacktoMain.swift in Sources */,
 				61F1739027E332940059EB59 /* SignUpViewController.swift in Sources */,
 				61714B5B27B440C900D02C0B /* SecondViewController.swift in Sources */,
 				61714B5527B40D3100D02C0B /* ViewController.swift in Sources */,
