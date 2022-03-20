@@ -493,7 +493,7 @@
                                     <constraint firstAttribute="height" constant="50" id="ed4-iF-Z9D"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L1Z-Mh-OUx">
                                 <rect key="frame" x="57" y="343" width="300" height="50"/>
@@ -576,7 +576,7 @@
                                     <constraint firstAttribute="width" constant="300" id="iXx-Ih-LuX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiH-XO-JiG">
                                 <rect key="frame" x="161" y="493" width="92" height="36"/>
@@ -774,6 +774,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Pt-iE-4JY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-65" y="64"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="t1v-LF-0Cb">
+            <objects>
+                <viewController id="oo5-dj-qSz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="whC-iX-HnA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RUn-Nq-ZSe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="deG-wv-7ow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="-609"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
