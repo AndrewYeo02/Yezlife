@@ -21,9 +21,9 @@ class LoginViewController: UIViewController {
         
     }
     
-    override func viewDidAppear(_ animated:Bool){
-        checkUserInfo()
-    }
+//    override func viewDidAppear(_ animated:Bool){
+//        checkUserInfo()
+//    }
     
     
     @IBAction func loginTab(_ sender: Any) {

@@ -342,7 +342,7 @@
                                                 <items>
                                                     <navigationItem id="ejl-2J-ITA">
                                                         <barButtonItem key="leftBarButtonItem" style="plain" id="mev-Ih-ZSN">
-                                                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="g8x-ib-3pZ">
+                                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="g8x-ib-3pZ">
                                                                 <rect key="frame" x="20" y="5" width="92" height="34.5"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" title="Button"/>
@@ -395,7 +395,7 @@
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background" image="Travel.jpeg"/>
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content="Travel Tip">
+                                                        <fragment content="Travel Tips">
                                                             <attributes>
                                                                 <font key="NSFont" size="24" name="Helvetica"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -404,6 +404,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="D3W-n7-6BK" kind="presentation" modalPresentationStyle="fullScreen" id="YRe-3G-HbQ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKT-nf-iL8">
                                                 <rect key="frame" x="7" y="81" width="400" height="210"/>
@@ -429,6 +432,9 @@
                                                     </attributedString>
                                                     <color key="baseForegroundColor" systemColor="systemGray6Color"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="oo5-dj-qSz" kind="presentation" modalPresentationStyle="fullScreen" id="yIJ-W7-tT8"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <viewLayoutGuide key="safeArea" id="rS2-9o-sm5"/>
@@ -775,25 +781,189 @@
             </objects>
             <point key="canvasLocation" x="-65" y="64"/>
         </scene>
-        <!--View Controller-->
+        <!--Calture View Controller-->
         <scene sceneID="t1v-LF-0Cb">
             <objects>
-                <viewController id="oo5-dj-qSz" sceneMemberID="viewController">
+                <viewController id="oo5-dj-qSz" customClass="CaltureViewController" customModule="yezlife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="whC-iX-HnA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Irish .png" translatesAutoresizingMaskIntoConstraints="NO" id="e8e-Ty-SF0">
+                                <rect key="frame" x="7" y="98" width="400" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="McM-6D-PwK"/>
+                                    <constraint firstAttribute="height" constant="300" id="rmR-He-XXg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVH-qX-Icf">
+                                <rect key="frame" x="31.5" y="416.5" width="51" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6P-Lr-4wF">
+                                <rect key="frame" x="327.5" y="410" width="59" height="36"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Like">
+                                            <attributes>
+                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clicksButton:" destination="oo5-dj-qSz" eventType="touchUpInside" id="nqm-gV-xjp"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EhQ-sY-30d">
+                                <rect key="frame" x="57" y="448" width="300" height="246"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="iwN-9L-38a"/>
+                                    <constraint firstAttribute="height" constant="246" id="u7Q-lh-p1F"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOC-Db-bOX">
+                                <rect key="frame" x="24" y="90" width="66.5" height="36"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Back">
+                                            <attributes>
+                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="qzd-Qp-X98" kind="presentation" modalPresentationStyle="fullScreen" id="wa4-8d-NDm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RUn-Nq-ZSe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EVH-qX-Icf" firstAttribute="centerX" secondItem="whC-iX-HnA" secondAttribute="centerX" constant="-150" id="CZa-yB-yE0"/>
+                            <constraint firstItem="EhQ-sY-30d" firstAttribute="centerX" secondItem="whC-iX-HnA" secondAttribute="centerX" id="GMK-5C-iq0"/>
+                            <constraint firstItem="e8e-Ty-SF0" firstAttribute="centerY" secondItem="whC-iX-HnA" secondAttribute="centerY" constant="-200" id="Rva-Sa-NaN"/>
+                            <constraint firstItem="I6P-Lr-4wF" firstAttribute="centerY" secondItem="whC-iX-HnA" secondAttribute="centerY" constant="-20" id="efb-nE-0ZA"/>
+                            <constraint firstItem="I6P-Lr-4wF" firstAttribute="centerX" secondItem="whC-iX-HnA" secondAttribute="centerX" constant="150" id="h3d-O7-B8N"/>
+                            <constraint firstItem="EVH-qX-Icf" firstAttribute="centerY" secondItem="whC-iX-HnA" secondAttribute="centerY" constant="-20" id="oDC-lM-ziR"/>
+                            <constraint firstItem="EhQ-sY-30d" firstAttribute="top" secondItem="e8e-Ty-SF0" secondAttribute="bottom" constant="50" id="uNH-N8-M2b"/>
+                            <constraint firstItem="MOC-Db-bOX" firstAttribute="centerX" secondItem="whC-iX-HnA" secondAttribute="centerX" constant="-150" id="uoA-Ge-pIm"/>
+                            <constraint firstItem="MOC-Db-bOX" firstAttribute="centerY" secondItem="whC-iX-HnA" secondAttribute="centerY" constant="-340" id="urK-jF-9t7"/>
+                            <constraint firstItem="e8e-Ty-SF0" firstAttribute="centerX" secondItem="whC-iX-HnA" secondAttribute="centerX" id="yYW-eI-DW2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="clicksLabel" destination="EVH-qX-Icf" id="dnN-W9-B3C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="deG-wv-7ow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="422" y="-609"/>
+            <point key="canvasLocation" x="421.73913043478262" y="-609.375"/>
+        </scene>
+        <!--Travel View Controller-->
+        <scene sceneID="Zgi-JP-Jdi">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Iq-k6-voi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="D3W-n7-6BK" customClass="TravelViewController" customModule="yezlife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FUE-Iu-LU7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Travel.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Wu0-cd-bC0">
+                                <rect key="frame" x="7" y="98" width="400" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="XJW-PS-P1F"/>
+                                    <constraint firstAttribute="width" constant="400" id="yhA-MO-eVO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1u-nu-UVG">
+                                <rect key="frame" x="27" y="416.5" width="60" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04F-x2-L70">
+                                <rect key="frame" x="322.5" y="410" width="69" height="36"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Likes">
+                                            <attributes>
+                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickButton:" destination="D3W-n7-6BK" eventType="touchUpInside" id="BfR-2K-yrG"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u03-QY-Fc2">
+                                <rect key="frame" x="57" y="465" width="300" height="246"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246" id="Ig3-FJ-PPk"/>
+                                    <constraint firstAttribute="width" constant="300" id="ahI-WH-xbG"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mv7-dn-0qV">
+                                <rect key="frame" x="23.5" y="70" width="67" height="36"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Back">
+                                            <attributes>
+                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="qzd-Qp-X98" kind="presentation" modalPresentationStyle="fullScreen" id="BwB-ec-9Fv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fSV-D7-wdh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u03-QY-Fc2" firstAttribute="centerX" secondItem="FUE-Iu-LU7" secondAttribute="centerX" id="4xT-OA-6zq"/>
+                            <constraint firstItem="Mv7-dn-0qV" firstAttribute="centerY" secondItem="FUE-Iu-LU7" secondAttribute="centerY" constant="-360" id="6rR-Ql-VB5"/>
+                            <constraint firstItem="04F-x2-L70" firstAttribute="centerX" secondItem="FUE-Iu-LU7" secondAttribute="centerX" constant="150" id="ByL-Ui-dAz"/>
+                            <constraint firstItem="x1u-nu-UVG" firstAttribute="centerX" secondItem="FUE-Iu-LU7" secondAttribute="centerX" constant="-150" id="ER6-07-gta"/>
+                            <constraint firstItem="u03-QY-Fc2" firstAttribute="centerY" secondItem="FUE-Iu-LU7" secondAttribute="centerY" constant="140" id="TPr-cQ-t5w"/>
+                            <constraint firstItem="04F-x2-L70" firstAttribute="centerY" secondItem="FUE-Iu-LU7" secondAttribute="centerY" constant="-20" id="UCI-7O-XJa"/>
+                            <constraint firstItem="Wu0-cd-bC0" firstAttribute="centerY" secondItem="FUE-Iu-LU7" secondAttribute="centerY" constant="-200" id="ZWm-QK-58d"/>
+                            <constraint firstItem="Wu0-cd-bC0" firstAttribute="centerX" secondItem="FUE-Iu-LU7" secondAttribute="centerX" id="bOu-vY-3LD"/>
+                            <constraint firstItem="x1u-nu-UVG" firstAttribute="centerY" secondItem="FUE-Iu-LU7" secondAttribute="centerY" constant="-20" id="eNG-Xn-8MX"/>
+                            <constraint firstItem="Mv7-dn-0qV" firstAttribute="centerX" secondItem="FUE-Iu-LU7" secondAttribute="centerX" constant="-150" id="oyO-FH-jq3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SFa-ko-Ogv"/>
+                    <connections>
+                        <outlet property="clicksLabel" destination="x1u-nu-UVG" id="GmU-HU-p9w"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="749" y="708"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kKa-gX-SUb"/>
-        <segue reference="5mp-0V-Szh"/>
+        <segue reference="BwB-ec-9Fv"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Irish .png" width="186" height="93"/>
