@@ -159,7 +159,7 @@
                                         <navigationBarAppearance key="compactScrollEdgeAppearance"/>
                                     </navigationBar>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewo-ef-JUl">
-                                        <rect key="frame" x="30" y="42.5" width="100" height="31"/>
+                                        <rect key="frame" x="20" y="42.5" width="100" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="33G-DO-FIL"/>
                                             <constraint firstAttribute="width" constant="100" id="5MQ-zX-0gk"/>
@@ -198,7 +198,7 @@
                                     <constraint firstItem="0oz-rd-rH8" firstAttribute="centerX" secondItem="e8L-YF-sV1" secondAttribute="centerX" id="Lt7-im-BeA"/>
                                     <constraint firstItem="VGd-b0-5h6" firstAttribute="centerX" secondItem="e8L-YF-sV1" secondAttribute="centerX" id="R23-FD-Vo8"/>
                                     <constraint firstItem="2ce-Ry-oEY" firstAttribute="top" secondItem="VGd-b0-5h6" secondAttribute="bottom" constant="10" id="VGf-iu-vls"/>
-                                    <constraint firstItem="Ewo-ef-JUl" firstAttribute="leading" secondItem="w4I-JU-y77" secondAttribute="leading" constant="30" id="b8J-7H-FFD"/>
+                                    <constraint firstItem="Ewo-ef-JUl" firstAttribute="leading" secondItem="w4I-JU-y77" secondAttribute="leading" constant="20" id="b8J-7H-FFD"/>
                                     <constraint firstItem="68P-NI-B9m" firstAttribute="centerX" secondItem="e8L-YF-sV1" secondAttribute="centerX" id="bOq-zf-z71"/>
                                     <constraint firstItem="2ce-Ry-oEY" firstAttribute="centerX" secondItem="e8L-YF-sV1" secondAttribute="centerX" id="baq-lo-bli"/>
                                     <constraint firstItem="Ewo-ef-JUl" firstAttribute="centerY" secondItem="e8L-YF-sV1" secondAttribute="centerY" constant="-390" id="eea-NX-IvG"/>
@@ -825,7 +825,11 @@
                                     <constraint firstAttribute="width" constant="300" id="iwN-9L-38a"/>
                                     <constraint firstAttribute="height" constant="246" id="u7Q-lh-p1F"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <string key="text">Dining with a large group (more than 6 or 8 people) is a special case. In this case, most restaurants in Ireland will add a 20% service charge to your bill automatically. Ask your server if a service charge has been added.
+
+Another way to check for a service charge is at the bottom of your restaurant bill. If there is a % service charge added to your bill, then you don't need add an extra gratuity.
+
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -873,7 +877,6 @@
         <!--Travel View Controller-->
         <scene sceneID="Zgi-JP-Jdi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Iq-k6-voi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="D3W-n7-6BK" customClass="TravelViewController" customModule="yezlife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FUE-Iu-LU7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -916,7 +919,7 @@
                                     <constraint firstAttribute="height" constant="246" id="Ig3-FJ-PPk"/>
                                     <constraint firstAttribute="width" constant="300" id="ahI-WH-xbG"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Most people with enough interest in Ireland to visit will already know that it’s split into two different countries, but may not have thought through the practicalities. If travelling across the border, you should be aware that as part of the UK, Northern Ireland uses pound sterling, not the euro. Since international bank cards will work perfectly in ATMs and chip and pin terminals on both sides it won’t make a huge difference, but it’s worth knowing if you’re planning to shop – even before Brexit, grocery shopping bills in Northern Ireland were around 15 per cent cheaper than in the republic.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -958,12 +961,13 @@
                         <outlet property="clicksLabel" destination="x1u-nu-UVG" id="GmU-HU-p9w"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Iq-k6-voi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749" y="708"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BwB-ec-9Fv"/>
+        <segue reference="wa4-8d-NDm"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Irish .png" width="186" height="93"/>
