@@ -28,6 +28,7 @@
 		617EC76C2785D5FF0070EB5B /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 617EC767278357360070EB5B /* heart.png */; };
 		617EC76E2786357E0070EB5B /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 617EC76D2786357E0070EB5B /* menu.png */; };
 		617EC76F2786357F0070EB5B /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 617EC76D2786357E0070EB5B /* menu.png */; };
+		619CB06927ECC66000C1006B /* CaltureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619CB06827ECC66000C1006B /* CaltureViewController.swift */; };
 		61B39D102781EB7000930BC7 /* Pink Script Signature Beauty Skincare Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B39D0F2781EB7000930BC7 /* Pink Script Signature Beauty Skincare Logo.png */; };
 		61E58CE827961BC200CD046F /* Monety-Save.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E58CE727961BC200CD046F /* Monety-Save.png */; };
 		61E58CE927961C3E00CD046F /* Monety-Save.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E58CE727961BC200CD046F /* Monety-Save.png */; };
@@ -39,7 +40,6 @@
 		61F1739027E332940059EB59 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1738F27E332940059EB59 /* SignUpViewController.swift */; };
 		61F1739227E3401A0059EB59 /* loginTothePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1739127E3401A0059EB59 /* loginTothePage.swift */; };
 		61F1739427E620970059EB59 /* BacktoMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1739327E620970059EB59 /* BacktoMain.swift */; };
-		61F1739627E77F7C0059EB59 /* CaltureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1739527E77F7B0059EB59 /* CaltureViewController.swift */; };
 		61F1739827E780520059EB59 /* TravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1739727E780520059EB59 /* TravelViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +81,7 @@
 		617EC767278357360070EB5B /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		617EC7692785D5020070EB5B /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 		617EC76D2786357E0070EB5B /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		619CB06827ECC66000C1006B /* CaltureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaltureViewController.swift; sourceTree = "<group>"; };
 		61B39D0F2781EB7000930BC7 /* Pink Script Signature Beauty Skincare Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink Script Signature Beauty Skincare Logo.png"; sourceTree = "<group>"; };
 		61E58CE727961BC200CD046F /* Monety-Save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Monety-Save.png"; sourceTree = "<group>"; };
 		61E58CEA2796210600CD046F /* Travel.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Travel.jpeg; sourceTree = "<group>"; };
@@ -89,7 +90,6 @@
 		61F1738F27E332940059EB59 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		61F1739127E3401A0059EB59 /* loginTothePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginTothePage.swift; sourceTree = "<group>"; };
 		61F1739327E620970059EB59 /* BacktoMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktoMain.swift; sourceTree = "<group>"; };
-		61F1739527E77F7B0059EB59 /* CaltureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CaltureViewController.swift; path = Pods/CaltureViewController.swift; sourceTree = "<group>"; };
 		61F1739727E780520059EB59 /* TravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelViewController.swift; sourceTree = "<group>"; };
 		C197690EEFAEE4ECEA8CAB79 /* Pods_yezlife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yezlife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7BA10B1154CF48346C6C0C /* Pods-yezlife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yezlife.debug.xcconfig"; path = "Target Support Files/Pods-yezlife/Pods-yezlife.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				61F1739727E780520059EB59 /* TravelViewController.swift */,
-				61F1739527E77F7B0059EB59 /* CaltureViewController.swift */,
+				619CB06827ECC66000C1006B /* CaltureViewController.swift */,
 				61F1739327E620970059EB59 /* BacktoMain.swift */,
 				615CFBE1273D313500561FEC /* yezlife */,
 				615CFBF8273D313700561FEC /* yezlifeTests */,
@@ -397,13 +397,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				61F1738E27E332730059EB59 /* LoginViewController.swift in Sources */,
+				619CB06927ECC66000C1006B /* CaltureViewController.swift in Sources */,
 				61F1739227E3401A0059EB59 /* loginTothePage.swift in Sources */,
 				61F1739427E620970059EB59 /* BacktoMain.swift in Sources */,
 				61F1739027E332940059EB59 /* SignUpViewController.swift in Sources */,
 				61714B5B27B440C900D02C0B /* SecondViewController.swift in Sources */,
 				61714B5527B40D3100D02C0B /* ViewController.swift in Sources */,
 				61714B5D27B44A0100D02C0B /* ThirdViewController.swift in Sources */,
-				61F1739627E77F7C0059EB59 /* CaltureViewController.swift in Sources */,
 				61714B5327B40AF700D02C0B /* AppDelegate.swift in Sources */,
 				615CFBE5273D313500561FEC /* SceneDelegate.swift in Sources */,
 				61F1739827E780520059EB59 /* TravelViewController.swift in Sources */,

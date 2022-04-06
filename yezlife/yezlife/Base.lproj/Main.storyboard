@@ -424,8 +424,8 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Culture Tips">
                                                             <attributes>
-                                                                <color key="NSColor" red="0.54405848575956528" green="1" blue="0.45709403286800632" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <font key="NSFont" size="30" name="Helvetica-Bold"/>
+                                                                <color key="NSColor" red="0.92153201733434631" green="1" blue="0.89631402447768316" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                             </attributes>
                                                         </fragment>
@@ -433,7 +433,7 @@
                                                     <color key="baseForegroundColor" systemColor="systemGray6Color"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="oo5-dj-qSz" kind="presentation" modalPresentationStyle="fullScreen" id="yIJ-W7-tT8"/>
+                                                    <segue destination="FkO-39-JfL" kind="presentation" modalPresentationStyle="fullScreen" id="fMB-YX-Hbn"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -781,99 +781,6 @@
             </objects>
             <point key="canvasLocation" x="-65" y="64"/>
         </scene>
-        <!--Calture View Controller-->
-        <scene sceneID="t1v-LF-0Cb">
-            <objects>
-                <viewController id="oo5-dj-qSz" customClass="CaltureViewController" customModule="yezlife" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="whC-iX-HnA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Irish .png" translatesAutoresizingMaskIntoConstraints="NO" id="e8e-Ty-SF0">
-                                <rect key="frame" x="7" y="98" width="400" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="McM-6D-PwK"/>
-                                    <constraint firstAttribute="height" constant="300" id="rmR-He-XXg"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVH-qX-Icf">
-                                <rect key="frame" x="31.5" y="416.5" width="51" height="23"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6P-Lr-4wF">
-                                <rect key="frame" x="327.5" y="410" width="59" height="36"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Like">
-                                            <attributes>
-                                                <font key="NSFont" size="19" name="Helvetica"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="clicksButton:" destination="oo5-dj-qSz" eventType="touchUpInside" id="nqm-gV-xjp"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EhQ-sY-30d">
-                                <rect key="frame" x="57" y="448" width="300" height="246"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="iwN-9L-38a"/>
-                                    <constraint firstAttribute="height" constant="246" id="u7Q-lh-p1F"/>
-                                </constraints>
-                                <string key="text">Dining with a large group (more than 6 or 8 people) is a special case. In this case, most restaurants in Ireland will add a 20% service charge to your bill automatically. Ask your server if a service charge has been added.
-
-Another way to check for a service charge is at the bottom of your restaurant bill. If there is a % service charge added to your bill, then you don't need add an extra gratuity.
-
-</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOC-Db-bOX">
-                                <rect key="frame" x="24" y="90" width="66.5" height="36"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Back">
-                                            <attributes>
-                                                <font key="NSFont" size="19" name="Helvetica"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="qzd-Qp-X98" kind="presentation" modalPresentationStyle="fullScreen" id="wa4-8d-NDm"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="RUn-Nq-ZSe"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="EVH-qX-Icf" firstAttribute="centerX" secondItem="whC-iX-HnA" secondAttribute="centerX" constant="-150" id="CZa-yB-yE0"/>
-                            <constraint firstItem="EhQ-sY-30d" firstAttribute="centerX" secondItem="whC-iX-HnA" secondAttribute="centerX" id="GMK-5C-iq0"/>
-                            <constraint firstItem="e8e-Ty-SF0" firstAttribute="centerY" secondItem="whC-iX-HnA" secondAttribute="centerY" constant="-200" id="Rva-Sa-NaN"/>
-                            <constraint firstItem="I6P-Lr-4wF" firstAttribute="centerY" secondItem="whC-iX-HnA" secondAttribute="centerY" constant="-20" id="efb-nE-0ZA"/>
-                            <constraint firstItem="I6P-Lr-4wF" firstAttribute="centerX" secondItem="whC-iX-HnA" secondAttribute="centerX" constant="150" id="h3d-O7-B8N"/>
-                            <constraint firstItem="EVH-qX-Icf" firstAttribute="centerY" secondItem="whC-iX-HnA" secondAttribute="centerY" constant="-20" id="oDC-lM-ziR"/>
-                            <constraint firstItem="EhQ-sY-30d" firstAttribute="top" secondItem="e8e-Ty-SF0" secondAttribute="bottom" constant="50" id="uNH-N8-M2b"/>
-                            <constraint firstItem="MOC-Db-bOX" firstAttribute="centerX" secondItem="whC-iX-HnA" secondAttribute="centerX" constant="-150" id="uoA-Ge-pIm"/>
-                            <constraint firstItem="MOC-Db-bOX" firstAttribute="centerY" secondItem="whC-iX-HnA" secondAttribute="centerY" constant="-340" id="urK-jF-9t7"/>
-                            <constraint firstItem="e8e-Ty-SF0" firstAttribute="centerX" secondItem="whC-iX-HnA" secondAttribute="centerX" id="yYW-eI-DW2"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="clicksLabel" destination="EVH-qX-Icf" id="dnN-W9-B3C"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="deG-wv-7ow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="421.73913043478262" y="-609.375"/>
-        </scene>
         <!--Travel View Controller-->
         <scene sceneID="Zgi-JP-Jdi">
             <objects>
@@ -919,7 +826,7 @@ Another way to check for a service charge is at the bottom of your restaurant bi
                                     <constraint firstAttribute="height" constant="246" id="Ig3-FJ-PPk"/>
                                     <constraint firstAttribute="width" constant="300" id="ahI-WH-xbG"/>
                                 </constraints>
-                                <mutableString key="text">Most people with enough interest in Ireland to visit will already know that it’s split into two different countries, but may not have thought through the practicalities. If travelling across the border, you should be aware that as part of the UK, Northern Ireland uses pound sterling, not the euro. Since international bank cards will work perfectly in ATMs and chip and pin terminals on both sides it won’t make a huge difference, but it’s worth knowing if you’re planning to shop – even before Brexit, grocery shopping bills in Northern Ireland were around 15 per cent cheaper than in the republic.</mutableString>
+                                <string key="text">Most people with enough interest in Ireland to visit will already know that it’s split into two different countries, but may not have thought through the practicalities. If travelling across the border, you should be aware that as part of the UK, Northern Ireland uses pound sterling, not the euro. Since international bank cards will work perfectly in ATMs and chip and pin terminals on both sides it won’t make a huge difference, but it’s worth knowing if you’re planning to shop – even before Brexit, grocery shopping bills in Northern Ireland were around 15 per cent cheaper than in the republic.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -965,9 +872,100 @@ Another way to check for a service charge is at the bottom of your restaurant bi
             </objects>
             <point key="canvasLocation" x="749" y="708"/>
         </scene>
+        <!--Calture View Controller-->
+        <scene sceneID="WLn-mZ-3kw">
+            <objects>
+                <viewController id="FkO-39-JfL" customClass="CaltureViewController" customModule="yezlife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fwr-7V-uRx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Irish .png" translatesAutoresizingMaskIntoConstraints="NO" id="SsH-QS-6Qx">
+                                <rect key="frame" x="7" y="98" width="400" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="RDm-hz-0xX"/>
+                                    <constraint firstAttribute="height" constant="300" id="eOg-J3-NEu"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TAD-8o-OG7">
+                                <rect key="frame" x="57" y="465" width="300" height="246"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246" id="UMc-0T-2aL"/>
+                                    <constraint firstAttribute="width" constant="300" id="WRy-8e-NWs"/>
+                                </constraints>
+                                <string key="text">Taking a taxi in Dublin? Tipping is in no way mandatory.
+
+🚖 If your taxi driver has been friendly and helpful, you can round up your bill to the nearest €5 or €10 euro. For example, for an €8 taxi fare, you could leave your taxi driver with €10.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nI-GD-dZP">
+                                <rect key="frame" x="31.5" y="416.5" width="51" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYP-cP-NTg">
+                                <rect key="frame" x="327.5" y="410" width="59" height="36"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Like">
+                                            <attributes>
+                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonClicks:" destination="FkO-39-JfL" eventType="touchUpInside" id="HcC-df-yyF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxe-26-N6o">
+                                <rect key="frame" x="23.5" y="90" width="67" height="36"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Back">
+                                            <attributes>
+                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="qzd-Qp-X98" kind="presentation" modalPresentationStyle="fullScreen" id="Kp4-3f-hNk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="syi-Ji-1CN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4nI-GD-dZP" firstAttribute="centerX" secondItem="fwr-7V-uRx" secondAttribute="centerX" constant="-150" id="3dC-5A-d9z"/>
+                            <constraint firstItem="Nxe-26-N6o" firstAttribute="centerY" secondItem="fwr-7V-uRx" secondAttribute="centerY" constant="-340" id="56B-GR-Sy5"/>
+                            <constraint firstItem="SsH-QS-6Qx" firstAttribute="centerY" secondItem="fwr-7V-uRx" secondAttribute="centerY" constant="-200" id="NVB-ku-dXZ"/>
+                            <constraint firstItem="TAD-8o-OG7" firstAttribute="centerY" secondItem="fwr-7V-uRx" secondAttribute="centerY" constant="140" id="TZ3-uU-QME"/>
+                            <constraint firstItem="xYP-cP-NTg" firstAttribute="centerX" secondItem="fwr-7V-uRx" secondAttribute="centerX" constant="150" id="iYO-Om-zEI"/>
+                            <constraint firstItem="Nxe-26-N6o" firstAttribute="centerX" secondItem="fwr-7V-uRx" secondAttribute="centerX" constant="-150" id="qTP-84-wYj"/>
+                            <constraint firstItem="SsH-QS-6Qx" firstAttribute="centerX" secondItem="fwr-7V-uRx" secondAttribute="centerX" id="qnA-u1-Agu"/>
+                            <constraint firstItem="4nI-GD-dZP" firstAttribute="centerY" secondItem="fwr-7V-uRx" secondAttribute="centerY" constant="-20" id="rEn-uZ-lhZ"/>
+                            <constraint firstItem="TAD-8o-OG7" firstAttribute="centerX" secondItem="fwr-7V-uRx" secondAttribute="centerX" id="xtj-xs-pj4"/>
+                            <constraint firstItem="xYP-cP-NTg" firstAttribute="centerY" secondItem="fwr-7V-uRx" secondAttribute="centerY" constant="-20" id="y3E-sU-BK2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clicksLabel" destination="4nI-GD-dZP" id="Kwu-mF-0A8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SIi-qr-0dc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="-702"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wa4-8d-NDm"/>
+        <segue reference="Kp4-3f-hNk"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Irish .png" width="186" height="93"/>
